@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EazyCorp.cc</title>
+<meta name="description" content="EazyCorp.cc - EazyTech, EazyHook.gg, EazyTeam.cc, EazySecure, EazyLib, 4MC">
+<meta property="og:title" content="EazyCorp.cc">
+<meta property="og:description" content="ставим софт на поток">
+<meta name="theme-color" content="#07080a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307080a'/%3E%3Crect x='7' y='7' width='18' height='4' fill='%2300e5a0'/%3E%3Crect x='7' y='14' width='12' height='4' fill='%2300e5a0'/%3E%3Crect x='7' y='21' width='18' height='4' fill='%2300e5a0'/%3E%3C/svg%3E">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="noise"></div>
+
+<div class="boot" id="boot">
+  <div class="boot-in">
+    <span class="boot-bar"><i></i></span>
+    <span class="boot-txt">eazycorp</span>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <header class="top">
+    <div class="mark">
+      <span class="mark-rects"><i></i><i></i><i></i></span>
+      <span class="mark-txt">EazyCorp<span class="dim">.cc</span></span>
+    </div>
+    <div class="status"><span class="dot"></span><span id="clock">--:--:--</span> <span class="dim">UTC</span></div>
+  </header>
+
+  <section class="hero">
+    <h1 class="glitch" data-txt="EazyCorp">EazyCorp</h1>
+    <p class="tagline">делаем инструменты, которыми пользуемся сами. почти всё живёт локально, у себя, без облаков и лишних глаз.</p>
+    <div class="chips">
+      <span class="chip">7 проектов</span>
+      <span class="chip">с 2021</span>
+      <span class="chip live"><i></i>онлайн</span>
+    </div>
+  </section>
+
+  <section class="grid" id="grid">
+    <article class="card big" data-i="01">
+      <div class="card-bg"></div>
+      <div class="card-top"><span class="idx">01</span><span class="tag">web</span></div>
+      <h2>EazyTech</h2>
+      <p>единственное, что снаружи. помогает выбрать клаву, мышку, наушники и всё остальное железо. именно выбрать, а не купить.</p>
+      <span class="note">скоро самая глобальная обнова за всю историю Изитеча!</span>
+    </article>
+
+    <article class="card" data-i="02">
+      <div class="card-bg"></div>
+      <div class="card-top"><span class="idx">02</span><span class="tag">local</span></div>
+      <h2>EazyHook<span class="dim">.gg</span></h2>
+      <p>с этого всё начиналось. крутится локально, до сих пор запускается.</p>
+    </article>
+
+    <article class="card" data-i="03">
+      <div class="card-bg"></div>
+      <div class="card-top"><span class="idx">03</span><span class="tag">local</span></div>
+      <h2>EazyTeam<span class="dim">.cc</span></h2>
+      <p>внутренняя штука под своих. таски, доступы, кто что тащит.</p>
+    </article>
+
+    <article class="card" data-i="04">
+      <div class="card-bg"></div>
+      <div class="card-top"><span class="idx">04</span><span class="tag">local</span></div>
+      <h2>EazySecure</h2>
+      <p>защита сборок, обфускация, антидамп. пишется медленно и злобно.</p>
+    </article>
+
+    <article class="card" data-i="05">
+      <div class="card-bg"></div>
+      <div class="card-top"><span class="idx">05</span><span class="tag">local</span></div>
+      <h2>EazyLib</h2>
+      <p>своя либа. рендер, хуки, ui. всё то, что не хотелось писать дважды.</p>
+    </article>
+
+    <article class="card" data-i="06">
+      <div class="card-bg"></div>
+      <div class="card-top"><span class="idx">06</span><span class="tag">wip</span></div>
+      <h2>EazyHook <span class="v2">v2</span></h2>
+      <p>переписан с нуля. новый рендер, новый конфиг, старое название.</p>
+    </article>
+
+    <article class="card wide" data-i="07">
+      <div class="card-bg"></div>
+      <div class="card-top"><span class="idx">07</span><span class="tag">mc</span></div>
+      <h2>4MC</h2>
+      <p>майнкрафт-направление: клиент, плагины, инфра под свои сервера.</p>
+    </article>
+  </section>
+
+  <section class="links">
+    <a class="lnk" href="https://t.me/" target="_blank" rel="noopener"><span>telegram</span><b>@eazycorp</b></a>
+    <a class="lnk" href="https://discord.gg/" target="_blank" rel="noopener"><span>discord</span><b>/eazy</b></a>
+    <a class="lnk" href="https://github.com/EazyE-sport" target="_blank" rel="noopener"><span>github</span><b>EazyE-sport</b></a>
+    <a class="lnk" href="mailto:hi@eazycorp.cc"><span>mail</span><b>hi@eazycorp.cc</b></a>
+  </section>
+
+  <footer class="foot">
+    <span>EazyCorp.cc</span>
+    <span class="dim">2021 - <span id="year">2026</span></span>
+  </footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
