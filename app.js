@@ -121,9 +121,20 @@ const tick = setInterval(() => {
   bar.style.width = p + '%';
 }, 70);
 
+let revealed = false;
 function reveal() {
+  if (revealed) return;
+  revealed = true;
   const cards = [...document.querySelectorAll('.card')];
-  cards.forEach((el, i) => setTimeout(() => el.classList.add('in'), 60 * i));
+  const io = new IntersectionObserver((rows, obs) => {
+    rows.forEach(r => {
+      if (!r.isIntersecting) return;
+      const i = cards.indexOf(r.target) % 3;
+      setTimeout(() => r.target.classList.add('in'), 70 * i);
+      obs.unobserve(r.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  cards.forEach(el => io.observe(el));
 }
 setTimeout(reveal, 2600);
 
